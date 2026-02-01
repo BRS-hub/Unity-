@@ -361,3 +361,97 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+# ================ Unity 核心忽略项 ================
+# Unity 编译/缓存目录
+[Ll]ibrary/
+[Ll]ogs/
+[Oo]bj/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Uu]ser[Ss]ettings/
+[Pp]roject[Ss]ettings/QualitySettings.asset
+[Pp]roject[Ss]ettings/TagManager.asset
+[Pp]roject[Ss]ettings/LayerMask.asset
+
+# 包管理缓存
+Library/PackageCache/
+Library/AssetDatabase3/
+Library/com.unity.assetbundle.loader/
+
+# 地址簿/Shader缓存
+[Aa]sset[Bb]undles/
+[Ss]haders/[Cc]ache/
+
+# 本地临时资源
+*.tmp
+*.temp
+*.rsp
+*.pid
+*.stackdump
+
+# ================ 编辑器/平台相关忽略 ================
+# VS/ Rider 编辑器配置（本地开发环境）
+.vs/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.sln.docstates
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 苹果平台
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserdata
+project.xcworkspace/
+xcuserdata/
+Pods/
+
+# 安卓平台
+Temp/gradleOut/
+Library/Android/
+build.gradle
+local.properties
+*.keystore
+*.jks
+
+# Windows 平台
+*.bak
+*.swp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac 系统隐藏文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ================ 其他通用忽略 ================
+# 日志/调试文件
+*.log
+*.txt~
+*.bak~
+*.orig
+
+# 自定义构建产物（如果有单独的构建目录）
+Builds/
+Export/
+
+# ================ 需保留的关键配置（反向注释） ================
+# !ProjectSettings/  # 如需保留部分项目设置，取消注释并删除上面的具体项
+# !UserSettings/EditorUserSettings.asset  # 如需共享编辑器基础设置，取消注释
