@@ -34,7 +34,7 @@ public class BasicTransformController : MonoBehaviour
         HandleScaling();
     }
 
-    // 待实现的方法...
+    // 平移输入
     void HandleTranslation()
     {
         // 获取输入（WASD标准移动控制）
@@ -56,6 +56,7 @@ public class BasicTransformController : MonoBehaviour
             Debug.Log($"当前位置: {transform.position}");
     }
 
+    //旋转输入
     void HandleRotation()
     {
         // Q/E键旋转控制
@@ -71,6 +72,7 @@ public class BasicTransformController : MonoBehaviour
         transform.Rotate(0, rotationAmount, 0, Space.Self);
     }
 
+    //缩放输入
     void HandleScaling()
     {
         // R/F键缩放控制
